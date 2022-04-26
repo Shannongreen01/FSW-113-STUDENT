@@ -1,0 +1,39 @@
+.calendarWrapper {
+    border: solid;
+    width: 100%;
+    margin: 0 auto;
+    background-color: aqua;
+    border: .1px solid;
+  }
+  
+  .title {
+    text-align: center;
+    padding: 5px;
+    font-weight: 700;
+    grid-column: span 7;
+    border: solid;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px 270px 270px 270px;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    background-color: lightgrey;
+    text-align: center;
+  }
+  
+  .calDiv {
+    border: .1px solid;
+    text-align: center;
+    padding: 3px;
+  }
+  
+  .blankDay {
+    display: none;
+  }
+  .new {
+    text-align: center;
+    padding: 5px;
+    border: .1px solid;
+  }
+
