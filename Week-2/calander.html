@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+
+<html> 
     <head>
         <title>Javascript Calendar</title>
         <link rel='stylesheet' href='Calander.css'>
     </head>
+
     <body>
         <div class='calendarWrapper'>
-            <div class='title'></div>
+            <div class='calendarTitle'></div>
             <div class='new'>
-                <select name='month' id='month'>
-                    
-                </select>
-                    
-                <input type='text' id='year' value='2021' size='1' name='Year'/>
-                <button id='enter'>Enter</button>
-            </div>
-            <div class='calendar' id='calDay'></div>
+            <select name='month' id='month'></select>
+            <input type='text' id='year' value='2022' size='1' name='Year'/>
+            <button id='go'>Search</button>
         </div>
+
+        <div class='calendar' id='calendarDays'></div>
+    </div>
+
     </body>
-    <script src='./calendar.js'></script>
+    <script src='calendar.js'></script>
 </html>
