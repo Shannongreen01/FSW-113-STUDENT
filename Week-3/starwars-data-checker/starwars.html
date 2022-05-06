@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='starwars.css'>
+    </head>
+    <body>
+        <h1 style='text-align:center;' id='title'>Star Wars Data Checker</h1>
+
+        <div class='queryWrapper'>
+            <div>Query Type:</div>
+            <div>
+                <select id='queryType'>
+                    <option value='people'>People</option>
+                    <option value='planets'>Planets</option>
+                </select>
+            </div>
+            <div>Item Number:</div>
+            <div>
+                <input type="number" style='width:25px' id='itemID' />
+            </div>
+            <div>
+                <button id='fetchButton' onclick="fetchData()">Fetch Data</button>
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div id='ResponseData' class='dataWrapper'>
+            <div class='dataCellLabel' id='name'></div>
+            <div class='dataCell' id='dataValue1'></div>
+            <div class='dataCellLabel' id='height'></div>
+            <div class='dataCell' id='dataValue2'></div>
+            <div class='dataCellLabel' id='mass'></div>
+            <div class='dataCell' id='dataValue3'></div>
+            <div class='dataCellLabel' id='hair-color'></div>
+            <div class='dataCell' id='dataValue4'></div>
+            <div class='dataCellLabel' id='skin-color'></div>
+            <div class='dataCell' id='dataValue5'></div>
+            <div class='dataCellLabel' id='eye-color'></div>
+            <div class='dataCell' id='dataValue6'></div>
+            <div class='dataCellLabel' id='birth-year'></div>
+            <div class='dataCell' id='dataValue7'></div>
+            <div class='dataCellLabel' id='gender'></div>
+            <div class='dataCell' id='dataValue8'></div>
+        </div>
+
+        <br /><br />
+        
+        <div class='footer'>
+            <hr />
+            <a href='https://swapi.dev/api/'' target='_new'>Data courtesy of Star War API</a>
+        </div>
+
+        <script src='starwars.js'></script>
+    </body>
+</html>
