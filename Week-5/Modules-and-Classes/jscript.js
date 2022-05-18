@@ -1,12 +1,12 @@
 let student;
 
-//event listener to call other functions with print button
+
 document.getElementById('print').addEventListener('click', function(){
     instantiate();
     print();
 });
 
-//event listener to grab ids from data inputted
+
 document.getElementById('reset').addEventListener('click', function(){
     document.getElementById('studentName').value = ' ';
     document.getElementById('className').value = ' ';
@@ -17,7 +17,7 @@ document.getElementById('reset').addEventListener('click', function(){
     document.getElementById('certGrade').innerHTML = '';
 });
 
-//function that creates new student by grabbing name/what class and converting scores of student and possible scores into an array.
+
 function instantiate(){
     student = new Student(
         document.getElementById('studentName').value,
