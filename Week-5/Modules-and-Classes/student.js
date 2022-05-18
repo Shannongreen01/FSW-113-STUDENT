@@ -1,4 +1,4 @@
-//? Creates a class with a constructor that has information from form as arguments.
+
 class Student {
     constructor(args) {
         this.studentName = arguments[0],
@@ -7,7 +7,7 @@ class Student {
         this.possibleScores = arguments[3]
     };
 
-    //? Creates a method that calculates students grade. Based off of data put in by user.
+
     calculateScores() {
         let scores = this.calculateStudentScores() / this.calculatePossibleScores();
         switch(true) {
@@ -19,7 +19,7 @@ class Student {
         };
     };
 
-    //? Creates method that gets the data by user to calculate student's stores. 
+   
     calculateStudentScores() {
         let studentScores = this.studentScores.reduce(
             (currentTotal, item) => {
@@ -30,7 +30,7 @@ class Student {
         return studentScores;
     };
 
-    //? Creates method to calculate possible scores inputed by user.
+   
     calculatePossibleScores() {
         let possibleScores = this.possibleScores.reduce(
             (currentTotal, item) => {
